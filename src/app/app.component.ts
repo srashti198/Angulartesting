@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { TestService } from './test.service';
 
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,7 +10,7 @@ export class AppComponent {
   employeeList:any;
   constructor(private testService: TestService){
   }
- 
+  
   getPhoneNumber( list:any){
     if(list.cellPhone){
       if(list.cellPhone.toString().length==10){
